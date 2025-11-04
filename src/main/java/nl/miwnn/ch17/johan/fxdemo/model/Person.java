@@ -2,16 +2,19 @@ package nl.miwnn.ch17.johan.fxdemo.model;
 
 /**
  * @author Johan Elzinga
- * Doel van de Class
+ *
  */
-
-//package model;
 
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
 
 public class Person {
-    private final StringProperty name = new SimpleStringProperty("");
+    private static final String DEFAULT_TEXT = "Jantine, Johan, Simon";
+    private final StringProperty name;
+
+    public Person() {
+        this.name = new SimpleStringProperty(DEFAULT_TEXT);
+    }
 
     public StringProperty nameProperty() {
         return name;

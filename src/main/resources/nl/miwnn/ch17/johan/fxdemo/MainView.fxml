@@ -6,6 +6,6 @@
 <VBox xmlns:fx="http://javafx.com/fxml" fx:controller="nl.miwnn.ch17.johan.fxdemo.view.MainView"
       spacing="10" alignment="CENTER" prefWidth="1200" prefHeight="200">
     <TextField fx:id="nameField" promptText="Typ je naam hier..." />
-    <Label fx:id="startLabel">Dit venster wordt niet ververst, toch staat hier: </Label>
+    <Label fx:id="startLabel">Dynamic adjustment of the text below by changing the text above: </Label>
     <Label fx:id="nameLabel" />
 </VBox>

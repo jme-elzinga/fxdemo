@@ -2,9 +2,7 @@ package nl.miwnn.ch17.johan.fxdemo.view;
 
 /**
  * @author Johan Elzinga
- * Doel van de Class
  */
-//package view;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
@@ -24,16 +22,14 @@ public class MainView {
 
     @FXML
     public void initialize() {
-        // Opmaak
+        // Formatting of the window, the input box and the labels
         nameField.setMaxWidth(600);
         nameField.setFont(new Font("Arial", 30));
         nameLabel.setFont(new Font("Arial", 30));
         nameLabel.setTextFill(Color.RED);
         startLabel.setFont(new Font("Arial", 30));
 
-
-
-        // Binding tussen UI en ViewModel
+        // Binding between UI and the ViewModel
         nameField.textProperty().bindBidirectional(viewModel.nameProperty());
         nameLabel.textProperty().bind(viewModel.displayedNameProperty());
     }

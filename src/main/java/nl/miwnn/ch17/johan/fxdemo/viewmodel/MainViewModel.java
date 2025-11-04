@@ -2,11 +2,7 @@ package nl.miwnn.ch17.johan.fxdemo.viewmodel;
 
 /**
  * @author Johan Elzinga
- * Doel van de Class
  */
-
-
-//package viewmodel;
 
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
@@ -19,7 +15,7 @@ public class MainViewModel {
     private final StringProperty displayedName = new SimpleStringProperty();
 
     public MainViewModel() {
-        // Binding tussen person.name en displayedName
+        // Binding between person.name and displayedName
         displayedName.bind(person.nameProperty());
     }
 

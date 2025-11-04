@@ -16,7 +16,7 @@ public class MainApp extends Application {
     public void start(Stage stage) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("MainView.fxml"));
         stage.setScene(new Scene(root));
-        stage.setTitle("JavaFX MVVM voorbeeld");
+        stage.setTitle("JavaFX MVVM example");
         stage.show();
     }
 
